@@ -30,3 +30,23 @@ Não executado: envio real pelo WhatsApp, confirmação de consulta, conferênci
 As fotografias são referências de banco de imagem; créditos e licenças em CREDITOS.md no tema. Não representam clientes, funcionários ou produtos do estoque. O número fictício do teste de codificação existe apenas no DOM, sem persistência nos cadastros.
 
 Capturas finais: `dist/novo-banner.png`, `dist/novo-banner-mobile.png`, `dist/novo-visual-desktop.png`, `dist/novo-visual-mobile.png`. As capturas de página inteira usam movimento reduzido para que seções fora da tela apareçam no registro estático; o teste de movimento verifica separadamente o modo animado.
+
+
+## Extensão 2.1 — relógios, marcas, influencers e equipe
+
+Validação real adicional com `node dev/expansion-check.cjs`:
+
+- Novos rascunhos da home e do Sobre nós, com blocos Gutenberg válidos e conteúdo das duas páginas de origem preservado byte a byte.
+- Repetir a instalação abre as mesmas páginas sem duplicar cadastros.
+- 15 espaços de marcas, 4 de influencers, 6 de funcionários e 3 de relógios.
+- Carrossel avança automaticamente, pausa com hover, completa um ciclo de 15 posições e responde às setas do teclado.
+- 5 posições visíveis no desktop e 3 no celular, com os itens das duas extremidades exatamente pela metade, medidos no navegador.
+- Movimento reduzido desativa o automático mantendo a navegação manual.
+- Quadro da equipe e recrutamento presentes somente no Sobre nós; a home recebe apenas sua prévia institucional.
+- WhatsApp e e-mail de recrutamento desativados enquanto não configurados.
+- Links corretos após configurar contatos de teste, acentos codificados, rejeição de valores inválidos preservando os anteriores e restauração dos contatos originais em finally. Não houve envio de currículo, mensagem ou e-mail.
+- Regressão do agendamento original e das interações, menu e responsividade da versão aprovada.
+
+O layout 2.0 foi mantido. Cadastros reais, fotos, logos, perfis, funções e contatos de recrutamento permanecem pendentes. Os números e o e-mail usados em testes existiram apenas temporariamente no banco da demonstração local e foram removidos antes das capturas e da entrega.
+
+Prévias novas: `dist/v21-inicio.png`, `dist/v21-marcas.png`, `dist/v21-relogios.png`, `dist/v21-influencers.png`, `dist/v21-sobre.png`, `dist/v21-equipe.png`, `dist/v21-curriculos.png`, `dist/v21-mobile.png`.
