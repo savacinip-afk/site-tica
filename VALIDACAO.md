@@ -50,3 +50,16 @@ Validação real adicional com `node dev/expansion-check.cjs`:
 O layout 2.0 foi mantido. Cadastros reais, fotos, logos, perfis, funções e contatos de recrutamento permanecem pendentes. Os números e o e-mail usados em testes existiram apenas temporariamente no banco da demonstração local e foram removidos antes das capturas e da entrega.
 
 Prévias novas: `dist/v21-inicio.png`, `dist/v21-marcas.png`, `dist/v21-relogios.png`, `dist/v21-influencers.png`, `dist/v21-sobre.png`, `dist/v21-equipe.png`, `dist/v21-curriculos.png`, `dist/v21-mobile.png`.
+
+
+## Finalização 2.2
+
+- Confirmado por inspeção de HTML e navegador: um único banner hero e um único H1; a repetição apontada estava no PNG longo de avaliação.
+- Captura em faixas testada no desktop e no celular, mostrando conteúdo final e rodapé sem reiniciar a página. Prévia 2.1 da home também corrigida.
+- Três registros iniciais de convênios; três cartões 2:1 no desktop e uma coluna no celular, sem transbordamento horizontal.
+- Seção incluída uma única vez, com blocos Gutenberg válidos.
+- Página final criada em rascunho; repetição da ação não duplica a página. Conteúdo anterior preservado byte a byte.
+- Marcas, influencers e demais elementos anteriores mantidos; equipe e currículos permanecem fora da home.
+- `node dev/final-check.cjs` passou no WordPress real de demonstração. A publicação desse teste é exclusivamente local.
+
+Arquivos finais: `dist/v22-inicio.png`, `dist/v22-convenios.png`, `dist/v22-mobile.png` e `dist/otica-rede-v2.2.zip`.
