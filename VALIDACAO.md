@@ -63,3 +63,28 @@ Prévias novas: `dist/v21-inicio.png`, `dist/v21-marcas.png`, `dist/v21-relogios
 - `node dev/final-check.cjs` passou no WordPress real de demonstração. A publicação desse teste é exclusivamente local.
 
 Arquivos finais: `dist/v22-inicio.png`, `dist/v22-convenios.png`, `dist/v22-mobile.png` e `dist/otica-rede-v2.2.zip`.
+
+
+## Elementor gratuito — versão 3.0 — 24/10/2026
+
+Plugin oficial Elementor gratuito 4.3.5, WordPress 6.8, PHP 8.3 e Chromium 153. Pacote oficial obtido por HTTPS na release do projeto Elementor no GitHub, sem alterar o plugin. O teste local usa seis workers e limites WordPress de memória compatíveis com o editor.
+
+Verificado com `node dev/elementor-validation.cjs` e `node dev/elementor-regression.cjs`:
+
+- Sete cópias de páginas abertas como prévias HTTP 200 no modelo próprio, com uma única área de conteúdo.
+- Textos, títulos, fotografias e botões convertidos em widgets nativos, e seções em contêineres nomeados. Não há widget HTML único para a página.
+- Editor completamente carregado, seleção de título e controle visual acessíveis.
+- Título alterado por digitação no controle nativo, salvo pela ação de rascunho do Elementor e conferido na prévia; texto depois restaurado.
+- Tipografia local Barlow Condensed e cor branca do banner conferidas no editor.
+- Preparação repetida sem substituir as edições; conteúdo original comparado byte a byte e página inicial ativa inalterada. As sete cópias continuam em rascunho.
+- Navegação entre rascunhos e preservação do parâmetro da unidade no agendamento.
+- Menu móvel, larguras de 390 e 1440px sem transbordamento horizontal.
+- Registros reutilizados: 15 marcas, 4 influencers, 3 convênios; equipe e currículos continuam fora da home.
+- Formulário em etapas, validação, bloqueio sem WhatsApp cadastrado, mensagem codificada e seleção de unidade. Nenhuma mensagem foi enviada; o número do teste existe só no DOM.
+- Filtros, modal de produtos e controle do carrossel nas cópias Elementor.
+- Página atual em Gutenberg continua com o layout e a fonte do tema.
+- Conexões externas opcionais foram bloqueadas no navegador de validação. Os componentes básicos e a edição funcionaram com recursos locais, sem conta ou licença Pro.
+
+Limites: não houve atualização na Hostinger, publicação externa das páginas ou teste com credenciais reais de contato. O upload de fotos próprias do usuário não foi executado. Cabeçalho e rodapé seguem como partes compartilhadas do tema, não como modelos Elementor Pro. No ambiente WASM foi observado um aviso intermitente de heartbeat/autenticação do WordPress no console do editor; não impediu abrir, digitar, salvar ou visualizar e não foi ocultado por alterações no plugin/core.
+
+Prévias: `dist/elementor-editor.png`, `dist/elementor-inicio.png`, `dist/elementor-mobile.png`. Guia: ELEMENTOR.md.
